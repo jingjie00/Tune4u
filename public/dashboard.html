@@ -1,98 +1,152 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <title>Dashboard | By Code Info</title>
-  <link rel="stylesheet" href="assets/css/dashboard.css" />
-  <!-- Font Awesome Cdn Link -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
-</head>
-<body>
-  <div class="container">
-    <nav>
-      <ul>
-        <li><a href="#" class="logo">
-          <img src="assets/logo/logo-circle.png" alt="" >
-          <span class="nav-item">DashBoard</span>
-        </a></li>
-        <li><a href="#">
-          <i class="fas fa-home"></i>
-          <span class="nav-item">Home</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-user"></i>
-          <span class="nav-item">Profile</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-wallet"></i>
-          <span class="nav-item">Wallet</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-chart-bar"></i>
-          <span class="nav-item">Analytics</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-tasks"></i>
-          <span class="nav-item">Tasks</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-cog"></i>
-          <span class="nav-item">Settings</span>
-        </a></li>
-        <li><a href="">
-          <i class="fas fa-question-circle"></i>
-          <span class="nav-item">Help</span>
-        </a></li>
-        <li><a href="" class="logout">
-          <i class="fas fa-sign-out-alt"></i>
-          <span class="nav-item">Log out</span>
-        </a></li>
-      </ul>
-    </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Dashboard | By Code Info</title>
+    <link rel="stylesheet" href="assets/css/dashboard.css" />
+    <!-- Font Awesome Cdn Link -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#" class="logo">
+              <img src="assets/logo/logo-circle.png" alt>
+              <span class="nav-item">DashBoard</span>
+            </a></li>
+          <li><a href="#">
+              <i class="fas fa-home"></i>
+              <span class="nav-item">Home</span>
+            </a></li>
+          <li><a href>
+              <i class="fas fa-user"></i>
+              <span class="nav-item">Profile</span>
+            </a></li>
+          <li><a href>
+              <i class="fas fa-wallet"></i>
+              <span class="nav-item">Wallet</span>
+            </a></li>
+          <li><a href>
+              <i class="fas fa-chart-bar"></i>
+              <span class="nav-item">Analytics</span>
+            </a></li>
+          <li><a href>
+              <i class="fas fa-tasks"></i>
+              <span class="nav-item">Tasks</span>
+            </a></li>
+          <li><a href>
+              <i class="fas fa-cog"></i>
+              <span class="nav-item">Settings</span>
+            </a></li>
+          <li><a href>
+              <i class="fas fa-question-circle"></i>
+              <span class="nav-item">Help</span>
+            </a></li>
+          <li><a href class="logout">
+              <i class="fas fa-sign-out-alt"></i>
+              <span class="nav-item">Log out</span>
+            </a></li>
+        </ul>
+      </nav>
 
-
-    <section class="main">
-      <div class="main-top">
-        <h1>Welcome back, Jia Zheng Choo</h1>
-        <i class="fas fa-user-cog"></i>
-      </div>
-      <div class="points-box">
-        <p class="caption">Your current point is:</p>
-        <p class="caption bold">8990</p>
-      </div>
-      <div class="main-skills">
-        <div class="card">
-          <img src="assets/img/paynow.png" alt="" style="width: 80px; height: 80px;">
-          <h3>Pay Online</h3>
-          <button>Pay Now</button>
+      <section class="main">
+        <div class="main-top">
+          <h1 id="welcome">Welcome back!</h1>
+          <i class="fas fa-user-cog"></i>
         </div>
-        <div class="card">
-          <img src="assets/img/parcel.png" alt="" style="width: 80px; height: 80px;">
-          <h3>My Plans & Claims</h3>
-          <button>View</button>
+        <div class="points-box">
+          <p class="caption">Your current point is:</p>
+          <p class="caption bold">8990</p>
         </div>
-        <div class="card">
-          <img src="assets/img/giftbox.png" alt="" style="width: 80px; height: 80px;">
-          <h3>Rewards</h3>
-          <button href="rewards.html">View</button>
-        </div>
-        <div class="card">
-          <img src="assets/img/letter.png" alt="" style="width: 80px; height: 80px;">
-          <h3>Referral Letter</h3>
-          <button>Generate</button>
-        </div>
-      </div>
-
-      <section class="image-section">
-        <div class="course-box">
-          <div class="image-container">
-            <img src="assets/img/check.png" alt="test">
+        <div class="main-skills">
+          <div class="card">
+            <img src="assets/img/paynow.png" alt
+              style="width: 80px; height: 80px;">
+            <h3>Pay Online</h3>
+            <button>Pay Now</button>
           </div>
-          <p class="caption">Is your current insurance coverage sufficient? Find out by taking our assessment now.</p>
-          <button class = "orange-button" onclick="window.location.href = 'assessment.html';">Take Assessment</button>
+          <div class="card">
+            <img src="assets/img/parcel.png" alt
+              style="width: 80px; height: 80px;">
+            <h3>My Plans & Claims</h3>
+            <button>View</button>
+          </div>
+          <div class="card">
+            <img src="assets/img/giftbox.png" alt
+              style="width: 80px; height: 80px;">
+            <h3>Rewards</h3>
+            <button href="rewards.html">View</button>
+          </div>
+          <div class="card">
+            <img src="assets/img/letter.png" alt
+              style="width: 80px; height: 80px;">
+            <h3>Referral Letter</h3>
+            <button>Generate</button>
+          </div>
         </div>
-      </section>
 
-  </div>
-</body>
+        <section class="image-section">
+          <div class="course-box">
+            <div class="image-container">
+              <img src="assets/img/check.png" alt="test">
+            </div>
+            <p class="caption">Is your current insurance coverage sufficient?
+              Find out by taking our assessment now.</p>
+            <button class="orange-button"
+              onclick="window.location.href = 'assessment.html';">Take
+              Assessment</button>
+          </div>
+        </section>
+
+      </div>
+      <div id="preloader"></div>
+      <script
+        src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
+      <script
+        src="https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics-compat.js"></script>
+      <script
+        src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+
+        <script src="assets/js/main.js"></script>
+      <script>
+
+
+            const firebaseConfig = {
+              apiKey: "AIzaSyBct7eRux52dAVJ_8_YFNPz1zBm4sCzJB8",
+              authDomain: "overflowingfeature.web.app",
+              projectId: "overflowingfeature",
+              storageBucket: "overflowingfeature.appspot.com",
+              messagingSenderId: "275715689132",
+              appId: "1:275715689132:web:86d867c52de9808aad2d09",
+              measurementId: "G-JW9RVHZRGS"
+            };
+          
+            // Initialize Firebase
+            const app = firebase.initializeApp(firebaseConfig);
+            const analytics = firebase.analytics(app);
+            const auth = firebase.auth(app);
+            
+        firebase.auth().onAuthStateChanged(function(user) {
+          if (user) {
+            console.log(user)
+            //find id call welcome and change the text to welcome back, [user]
+            const welcome = document.getElementById("welcome");
+          console.log(user)
+          if (user) {
+            // User is signed in.
+            welcome.innerHTML = "Welcome back, " + user.displayName;
+          } else {
+            // No user is signed in.
+            welcome.innerHTML = "Welcome back, Guest";
+          }
+          }else{
+            console.log("da",ser)
+          }
+        })
+      </script>
+    </body>
+  </body>
 </html>

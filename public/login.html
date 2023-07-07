@@ -57,9 +57,7 @@
                         <li>
                             <a class="nav-link scrollto" href="./dashboard.html">Dashboard</a>
                         </li>
-                        <li><a class="nav-link scrollto" href="#team">Sign Up</a></li>
-
-                        <li><a class="nav-link scrollto" href="#contact">Log In</a></li>
+                        <li><a class="nav-link scrollto" href="./login.html">Log in</a></li>
                         <li><a class="getstarted scrollto" href="#about">Chat</a></li>
                     </ul>
                     <i class="bi bi-list mobile-nav-toggle"></i>
@@ -70,10 +68,9 @@
         <!-- End Header -->
 
         <!-- ======= Hero Section ======= -->
-        <section id="hero" class="d-flex align-items-center">
-            <div class="container">
-
-                <div class="row">
+        <section id="hero" class="d-flex align-items-center" >
+            <div class="container" >
+                <div class="row" >
                     <div
                         class="col-lg-6 hero-img"
                         data-aos="zoom-in"
@@ -89,35 +86,15 @@
                         <div id="firebaseui-auth-container"></div>
                         <div id="loader">Loading...</div>
                     </div>
-
                 </div>
+                
             </div>
         </section>
         <!-- End Hero -->
 
         <!-- ======= Footer ======= -->
         <footer id="footer">
-            <div class="footer-newsletter">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class="col-lg-6">
-                            <h4>Join Our Newsletter</h4>
-                            <p>
-                                Tamen quem nulla quae legam multos aute sint
-                                culpa legam noster
-                                magna
-                            </p>
-                            <form action method="post">
-                                <input type="email" name="email" /><input
-                                    type="submit"
-                                    value="Subscribe" />
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="container footer-bottom clearfix">
+            <div class="container footer-bottom clearfix" style="padding-top: 110px;">
                 <div class="copyright">
                     &copy; Copyright <strong><span>Overflowing Feature</span></strong>.
                 </div>
@@ -151,10 +128,11 @@
             src="https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics-compat.js"></script>
         <script
             src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
+        
         <script type="module">
             const firebaseConfig = {
               apiKey: "AIzaSyBct7eRux52dAVJ_8_YFNPz1zBm4sCzJB8",
-              authDomain: "overflowingfeature.firebaseapp.com",
+              authDomain: "overflowingfeature.web.app",
               projectId: "overflowingfeature",
               storageBucket: "overflowingfeature.appspot.com",
               messagingSenderId: "275715689132",
@@ -187,19 +165,21 @@
                 },
                 // Will use popup for IDP Providers sign-in flow instead of the default, redirect.
                 signInFlow: 'popup',
-                signInSuccessUrl: '<url-to-redirect-to-on-success>',
+                autoUpgradeAnonymousUsers: true,
+                signInSuccessUrl: './dashboard.html',
                 signInOptions: [
                     // Leave the lines as is for the providers you want to offer your users.
                     firebase.auth.GoogleAuthProvider.PROVIDER_ID,
                     firebase.auth.EmailAuthProvider.PROVIDER_ID
                 ],
                 // Terms of service url.
-                tosUrl: '<your-tos-url>',
+                tosUrl: 'privacy.html',
                 // Privacy policy url.
-                privacyPolicyUrl: '<your-privacy-policy-url>'
+                privacyPolicyUrl: 'privacy.html'
             };
 
             ui.start('#firebaseui-auth-container', uiConfig);
+            
         </script>
     </body>
 </html>
