@@ -421,19 +421,25 @@ h6 {
   color: #fff;
   background: #ff5900;
 }
+.space{
+margin: 10px;
+}
+#hero .btn-get-started2 {
+  font-family: "Jost", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 10px 28px 11px 28px;
+  border-radius: 50px;
+  transition: 0.5s;
+  margin: 10px 0 0 0;
+  background: #fff;
+  color: #ff5900;
+}
 
 #hero .btn-get-started:hover {
   background: #ff0000;
-}
-
-#hero .btn-watch-video {
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  transition: 0.5s;
-  margin: 10px 0 0 25px;
-  color: #fff;
-  line-height: 1;
 }
 
 #hero .btn-watch-video i {
