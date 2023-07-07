@@ -48,6 +48,7 @@
   <script type="module">  // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
     import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+    import { getStorage, ref, uploadBytes  } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-storage.js";
     // TODO: Add SDKs for Firebase products that you want to use
     // https://firebase.google.com/docs/web/setup#available-libraries
 
@@ -66,12 +67,24 @@
 
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
+    // Initialize Cloud Storage and get a reference to the service
+  const storage = getStorage(app);
     const analytics = getAnalytics(app);
-  </script>
+    // Get a non-default Storage bucket
+// const firebaseApp = getApp();
+// const storage = getStorage(firebaseApp, "gs://my-custom-bucket");
 
+    const addMarks = ()=>{
+        let obj = {
+          name: 'abc',
+          age: 123
+        }
+      }
+      app.database().ref('users/user1').set(obj);
+  </script>
   </head>
 
-  <body>
+  <body>      
     <!--realtime Database JS File-->
     <!-- <script type="module" src ="assets/js/db.js"></script> -->
     <!-- ======= Header ======= -->
@@ -80,7 +93,7 @@
           <a href="index.html" class="logo me-auto"><img
                   src="./assets/logo/logo-circle.png"
                   alt="Tune4U"
-                  class="img-fluid" /></a>
+                  class="img-fluid" onclick="addMarks()"/></a>
           <nav id="navbar" class="navbar">
               <ul>
                   <li><a class="nav-link scrollto active" href="#hero">Home</a></li>

@@ -155,6 +155,11 @@
         //when id called "logout" clicked, signout
         const logout = document.getElementById("logout");
         logout.addEventListener("click", function(){
+          // TO-DO
+          //  firebase.auth().user = email/username
+          // get the user name & POST
+          // main.js
+          // sign in only POST
           firebase.auth().signOut().then(() => {
             // Sign-out successful.
             console.log("signout successful")
