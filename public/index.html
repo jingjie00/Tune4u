@@ -40,14 +40,13 @@
 
     <style>
       /* only on non-mobile */
-    @media (min-width: 576px) {
+    /* @media (min-width: 576px) {
       .carousel-item img {
           width: auto !important;
           height: 100vh;
           max-height: 400vh;
       }
-    }
-    
+    } */
     </style>
 
     <!-- =======================================================
@@ -125,8 +124,31 @@
     </section>
     <!-- End Hero -->
 
-    <section id = "carosel_promotion_imgs" style = "height: 90vh; background-color: #ff9f1c;">
-      <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
+    <section id = "carosel_promotion_imgs" style = " background-color: #ff9f1c; padding:0%;">
+      <div id="carouselExampleInterval" class="carousel slide " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="2000">
+            <img src="./img/promotion2.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./img/promotion3.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="./img/promotion1.jpg" class="d-block w-100 img-fluid" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!-- <div id="carouselExampleRide" class="carousel slide" data-bs-ride="true">
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="./img/promotion2.jpg" class="d-block mx-auto w-100" alt="...">
@@ -146,7 +168,7 @@
           <span class="carousel-control-next-icon" aria-hidden="true"></span>
           <span class="visually-hidden">Next</span>
         </button>
-      </div>
+      </div> -->
     </section>
   
     <main id="main">
