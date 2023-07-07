@@ -250,3 +250,66 @@ a:hover{
     margin-top: 15px;
     cursor: pointer;
   }
+
+  .points-container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .points-box {
+    width: 30%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+  }
+
+  .points-box {
+    width: 30%;
+    height: 100px;
+    padding: 10px;
+    margin-top: 10px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 20px 35px rgba(0, 0, 0, 0.1);
+    font-family: "Poppins", sans-serif;
+  }
+  
+  .caption {
+    text-align: center;
+    margin: 0;
+  }
+  
+  .bold {
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 10px;
+  }
+  
+  .center-aligned {
+    text-align: center;
+  }
+  
+  .right-aligned {
+    text-align: right;
+  }
+
+  .dashboard-size{
+    font-size: 14px;
+  }
+
+  .smaller-image {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle;
+  }
+  
+  .align-middle {
+    vertical-align: middle;
+  }
+
+
+  
