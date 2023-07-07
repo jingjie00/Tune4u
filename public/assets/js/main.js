@@ -271,13 +271,4 @@
       mirror: false,
     });
   });
-
-  // Create an event listener for authentication state changes
-  firebase.auth().onAuthStateChanged(function (user) {
-    if (user) {
-      // User is signed in, trigger firebase.auth() here
-      // For example, you can call a function or execute your desired code
-      console.log("Signed in");
-    }
-  });
 })();

@@ -7,6 +7,8 @@
     <!-- Font Awesome Cdn Link -->
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
   </head>
   <body>
 
@@ -121,8 +123,6 @@
 
       <script src="assets/js/main.js"></script>
       <script>
-
-
             const firebaseConfig = {
               apiKey: "AIzaSyBct7eRux52dAVJ_8_YFNPz1zBm4sCzJB8",
               authDomain: "overflowingfeature.web.app",
@@ -140,17 +140,30 @@
             
         firebase.auth().onAuthStateChanged(function(user) {
           if (user) {
-            console.log(user)
             //find id call welcome and change the text to welcome back, [user]
             const welcome = document.getElementById("welcome");
             welcome.innerHTML = "Welcome back, " + user.displayName;
-            console.log(user)
-          }else{
-            // No user is signed in.
-            //window.location.href = "login.html";
+            console.log(user);
+
+            // Testing by Min Yi
+            // User is signed in
+            var userid = user.uid;
+
+            // Make an HTTP GET request using Axios
+            let bodydata = {
+              uid: userid
+            };
+            axios.post('https://asia-southeast1-overflowingfeature.cloudfunctions.net/function-1', bodydata)
+              .then(function(response) {
+                // Handle the response data
+                console.log(response.data);
+              })
+              .catch(function(error) {
+                // Handle errors
+                console.error(error);
+              });
           }
         })
-
 
         //when id called "logout" clicked, signout
         const logout = document.getElementById("logout");
