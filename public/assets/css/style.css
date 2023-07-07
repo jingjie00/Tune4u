@@ -44,7 +44,7 @@ h6 {
   bottom: 0;
   z-index: 9999;
   overflow: hidden;
-  background: #e85d04;
+  background: #ff9f1c;
 }
 
 #preloader:before {
@@ -52,7 +52,7 @@ h6 {
   position: fixed;
   top: calc(50% - 30px);
   left: calc(50% - 30px);
-  border: 6px solid #e85d04;
+  border: 6px solid  #ff9f1c;
   border-top-color: #fff;
   border-bottom-color: #fff;
   border-radius: 50%;
@@ -81,7 +81,7 @@ h6 {
   right: 15px;
   bottom: 15px;
   z-index: 996;
-  background: #dfaa16;
+  background: #e85d04;
   width: 40px;
   height: 40px;
   border-radius: 50px;
@@ -95,7 +95,7 @@ h6 {
 }
 
 .back-to-top:hover {
-  background: #6bc1e9;
+  background: #ffb703;
   color: #fff;
 }
 
@@ -856,7 +856,8 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #e85d04;
+  background: #ff9f1c;
+  c
 }
 
 #footer .footer-newsletter {
@@ -864,7 +865,7 @@ section {
   background: #f3f5fa;
   text-align: center;
   font-size: 15px;
-  color: #444444;
+  color: #000000;
 }
 
 #footer .footer-newsletter h4 {
@@ -909,7 +910,7 @@ section {
 }
 
 #footer .footer-newsletter form input[type="submit"]:hover {
-  background: #209dd8;
+  background: #ff0303;
 }
 
 #footer .footer-top {
@@ -928,7 +929,7 @@ section {
   line-height: 1;
   text-transform: uppercase;
   font-weight: 600;
-  color: #e85d04;
+  color: #ffb703;
 }
 
 #footer .footer-top .footer-contact p {
@@ -975,7 +976,7 @@ section {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #777777;
+  color: #000000;
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -1002,7 +1003,7 @@ section {
 }
 
 #footer .footer-top .social-links a:hover {
-  background: #209dd8;
+  background: #ff0703;
   color: #fff;
   text-decoration: none;
 }
@@ -1010,10 +1011,11 @@ section {
 #footer .footer-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
-  color: #fff;
+  color: #000000;
 }
 
 #footer .copyright {
+  
   float: left;
 }
 
