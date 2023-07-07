@@ -411,6 +411,13 @@ h6 {
   visibility: visible !important;
 }
 
+#magic {
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  background-color: none;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
