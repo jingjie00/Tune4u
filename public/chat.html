@@ -34,6 +34,7 @@
 
         <!-- Template Main CSS File -->
         <link href="assets/css/style.css" rel="stylesheet" />
+        <link href="assets/css/easterEgg.css" rel="stylesheet" />
 
         <script
             src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
@@ -51,6 +52,7 @@
                         class="img-fluid" onclick="addMarks()"/></a>
                 <nav id="navbar" class="navbar">
                     <ul>
+                      <li><div id="magic" onclick="testing()">&nbsp;</div></li>
                         <li><a class="nav-link scrollto active" href=./index.html>Home</a></li>
                         <li><a class="nav-link scrollto" href="#about">About</a></li>
                         <li><a class="nav-link scrollto" href=./loyalty.html>Loyalty Program</a></li>
@@ -60,7 +62,7 @@
                         <li><a class="getstarted scrollto" href=./chat.html>Chat</a></li>
                         
                     </ul>
-                    <i class="bi bi-list mobile-nav-toggle"></i>
+                    <i class="bi bi-list mobile-nav-toggle" style="right:5px"></i>
                 </nav>
               <!-- .navbar -->
             </div>
@@ -119,5 +121,7 @@
         <script type="module">
 
         </script>
+        <script src = "./assets/js/easterEgg.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
     </body>
 </html>
