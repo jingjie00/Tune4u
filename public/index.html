@@ -64,23 +64,6 @@
       appId: "1:275715689132:web:86d867c52de9808aad2d09",
       measurementId: "G-JW9RVHZRGS"
     };
-
-    // Initialize Firebase
-    const app = initializeApp(firebaseConfig);
-    // Initialize Cloud Storage and get a reference to the service
-  const storage = getStorage(app);
-    const analytics = getAnalytics(app);
-    // Get a non-default Storage bucket
-// const firebaseApp = getApp();
-// const storage = getStorage(firebaseApp, "gs://my-custom-bucket");
-
-    const addMarks = ()=>{
-        let obj = {
-          name: 'abc',
-          age: 123
-        }
-      }
-      app.database().ref('users/user1').set(obj);
   </script>
   </head>
 
@@ -104,7 +87,7 @@
                       <a class="nav-link scrollto" href="./dashboard.html">Dashboard</a>
                   <li><a class="getstarted scrollto" href=./chat.html>Chat</a></li>
               </ul>
-              <i class="bi bi-list mobile-nav-toggle"></i>
+              <i class="bi bi-list mobile-nav-toggle" style="right:5px"></i>
           </nav>
         <!-- .navbar -->
       </div>
@@ -136,7 +119,7 @@
             data-aos="zoom-in"
             data-aos-delay="200">
             <img
-              src="./assets/logo/logo-rectangle.png"
+              src="./assets/logo/logo-rectangle-small.png"
               class="img-fluid animated"
               alt />
           </div>
