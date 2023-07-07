@@ -18,6 +18,21 @@ const createEasterEgg = () => {
   easterEggContainer.append(easterEgg);
 
   setTimeout(() => easterEgg.classList.remove("animate-in"), 300);
+
+  let score = localStorage.getItem("score");
+  if (score) {
+    if (score === 0) score = 4;
+    else {
+      // Data exists in Local Storage
+      console.log("Data found:", score);
+      score = Number(score) + 4;
+      localStorage.setItem("score", score);
+    }
+  } else {
+    // Data does not exist in Local Storage
+    console.log("No data found in Local Storage.");
+    localStorage.setItem("score", 0);
+  }
 };
 
 const testing = () => {

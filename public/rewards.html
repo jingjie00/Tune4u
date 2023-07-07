@@ -38,6 +38,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/css/easterEgg.css" rel="stylesheet" />
 
     <style>
       /* only on non-mobile */
@@ -70,13 +71,15 @@
                   class="img-fluid" onclick="addMarks()"/></a>
           <nav id="navbar" class="navbar">
               <ul>
+                <li><div id="magic" onclick="testing()">&nbsp;</div></li>
                   <li><a class="nav-link scrollto active" href=./index.html>Home</a></li>
                   <li><a class="nav-link scrollto" href="#about">About</a></li>
                   <li><a class="nav-link scrollto" href=./loyalty.html>Loyalty Program</a></li>
                   <li><a class="nav-link scrollto" href="#services">Plans</a></li>
                   <li>
                       <a class="nav-link scrollto" href="./dashboard.html">Dashboard</a>
-                  <li><a class="getstarted scrollto" href="#about">Chat</a></li>
+                  <li><a class="getstarted scrollto" href=./chat.html>Chat</a></li>
+                  
               </ul>
               <i class="bi bi-list mobile-nav-toggle"></i>
           </nav>
@@ -84,7 +87,7 @@
       </div>
     </header>
     <!-- End Header -->
-  
+    <span id = "easterEgg" style = "z-index: 2;"></span>
     <main id="main">
       <!-- ======= About Us Section ======= -->
       <section id="about" class="about mb-5" >
@@ -153,5 +156,8 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src = "./assets/js/easterEgg.js"></script>   
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+
   </body>
 </html>
