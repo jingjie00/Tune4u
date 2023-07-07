@@ -62,7 +62,12 @@
         <div class="points-container">
           <div class="points-box left-aligned">
             <p class="caption">Your current point is:</p>
-            <p class="caption bold">8990</p>
+            <p class="caption bold" id="user-points"></p>
+            
+      <script>
+        let score = localStorage.getItem('score');
+        document.getElementById('user-points').textContent = score;
+      </script>
           </div>
           <div class="points-box right-aligned">
             <p class="caption bold">
