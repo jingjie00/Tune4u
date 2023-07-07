@@ -115,7 +115,7 @@ h6 {
 
 #header.header-scrolled,
 #header.header-inner-pages {
-  background: rgba(226, 146, 26, 0.9);
+  background: #ff9f1c;
 }
 
 #header .logo {
@@ -302,7 +302,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(236, 174, 39, 0.9);
+  background: #ff9f1c;
   transition: 0.3s;
   z-index: 999;
 }
@@ -419,11 +419,11 @@ h6 {
   transition: 0.5s;
   margin: 10px 0 0 0;
   color: #fff;
-  background: #ff7d00;
+  background: #ff5900;
 }
 
 #hero .btn-get-started:hover {
-  background: #ff5400;
+  background: #ff0000;
 }
 
 #hero .btn-watch-video {
