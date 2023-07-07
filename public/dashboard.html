@@ -45,7 +45,7 @@
               <i class="fas fa-question-circle"></i>
               <span class="nav-item">Help</span>
             </a></li>
-          <li><a href class="logout">
+          <li><a id="logout" href class="logout">
               <i class="fas fa-sign-out-alt"></i>
               <span class="nav-item">Log out</span>
             </a></li>
@@ -140,6 +140,21 @@
             // No user is signed in.
             window.location.href = "login.html";
           }
+        })
+
+
+        //when id called "logout" clicked, signout
+        const logout = document.getElementById("logout");
+        logout.addEventListener("click", function(){
+          firebase.auth().signOut().then(() => {
+            // Sign-out successful.
+            console.log("signout successful")
+            //back to login page
+            window.location.href = "login.html";
+          }).catch((error) => {
+            // An error happened.
+            console.log(error)
+          });
         })
       </script>
     </body>
