@@ -21,17 +21,19 @@ const createEasterEgg = () => {
 
   let score = localStorage.getItem("score");
   if (score) {
-    if (score === 0) score = 4;
-    else {
-      // Data exists in Local Storage
-      console.log("Data found:", score);
+    // found score
+    if (score === 92) {
+      // ori score (1st time)
+      score = 96;
+    } else {
+      console.log("Data Found");
       score = Number(score) + 4;
       localStorage.setItem("score", score);
     }
   } else {
     // Data does not exist in Local Storage
     console.log("No data found in Local Storage.");
-    localStorage.setItem("score", 0);
+    localStorage.setItem("score", 92);
   }
 };
 

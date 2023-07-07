@@ -98,7 +98,11 @@
           <div class="row">
           <div class="card col m-2">
             <div class="card-body">
-              <h5 class="card-title">8990</h5>
+              <h5 class="card-title" id="user-points2">8990</h5>
+              <script>
+                let score = localStorage.getItem('score');
+                document.getElementById('user-points2').textContent = score;
+              </script>
               <p class="card-text">Points</p>
               <a href="#" class="btn btn-primary" style="background-color: #ff9f1c; border: none;">Redeem Rewards</a>
             </div>
@@ -114,8 +118,12 @@
 
         <div class="card">
           <div class="card-body">
-            <h5 class="card-title">Easter Eggs Found</h5>
-            <p class="card-text">2</p>
+            <h5 class="card-title" id="n_eggs">92</h5>
+            <p class="card-text">Easter Eggs Found</p>
+            <script>
+              let n_eggs = Number(localStorage.getItem('score'))/4;
+              document.getElementById('n_eggs').textContent = n_eggs;
+            </script>
           </div>
         </div>
       </div>
