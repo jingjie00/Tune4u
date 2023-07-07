@@ -66,7 +66,8 @@
             
       <script>
         let score = localStorage.getItem('score');
-        document.getElementById('user-points').textContent = score;
+        if (document.getElementById('user-points').textContent)
+          document.getElementById('user-points').textContent = score;
       </script>
           </div>
           <div class="points-box right-aligned">
