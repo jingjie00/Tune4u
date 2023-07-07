@@ -34,6 +34,9 @@
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
 
+    <!-- Easter Egg CSS File-->
+    <link href="assets/css/easterEgg.css" rel="stylesheet" />
+
     <!-- =======================================================
   * Template Name: Tune4u
   * Updated: Jul 05 2023 with Bootstrap v5.3.0
@@ -146,31 +149,26 @@
           <div class="row content">
             <div class="col-lg-6">
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Tune4U is a team of 5 who are dedicated to creating a customer loyalty engagement program that
+                is innovative and provides the best solution for both the customer and company.
               </p>
               <ul>
                 <li>
-                  <i class="ri-check-double-line"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat
+                  <i class="ri-check-double-line"></i> Responsive and smart chatbot
                 </li>
                 <li>
-                  <i class="ri-check-double-line"></i> Duis aute irure dolor in
-                  reprehenderit in voluptate velit
+                  <i class="ri-check-double-line"></i> Engaging easter egg initiative that keeps you knowledgable as well
                 </li>
                 <li>
-                  <i class="ri-check-double-line"></i> Ullamco laboris nisi ut
-                  aliquip ex ea commodo consequat
+                  <i class="ri-check-double-line"></i> Easy-to-use interface
                 </li>
               </ul>
             </div>
             <div class="col-lg-6 pt-4 pt-lg-0">
               <p>
-                Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                aute irure dolor in reprehenderit in voluptate velit esse cillum
-                dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                cupidatat non proident, sunt in culpa qui officia deserunt
-                mollit anim id est laborum.
+                Insurance specially for you. We offer comprehensive and affordable online protection plans to meet the needs of any individual. 
+                Whether you are looking to protect your travels, personal accidents or even against snatch theft, safeguarding yourself against untoward occurrences is just a few simple clicks away.
+                Subscribe to us for a better life.
               </p>
               <a href="#" class="btn-learn-more">Learn More</a>
             </div>
@@ -223,11 +221,15 @@
       </footer>
       <!-- End Footer -->
 
-      <div id="preloader"></div>
-      <a
-        href="#"
-        class="back-to-top d-flex align-items-center justify-content-center"><i
-          class="bi bi-arrow-up-short"></i></a>
+    <!-- <div id = "easterEgg"></div> -->
+    <span id = "easterEgg" style = "z-index: 2;"></span>
+
+    <div id="preloader"></div>
+    <a
+      href="#"
+      class="back-to-top d-flex align-items-center justify-content-center"
+      ><i class="bi bi-arrow-up-short"></i
+    ></a>
 
       <!-- Vendor JS Files -->
       <script src="assets/vendor/aos/aos.js"></script>
@@ -238,35 +240,11 @@
       <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
       <script src="assets/vendor/php-email-form/validate.js"></script>
 
-      <!-- Template Main JS File -->
-      <script src="assets/js/main.js"></script>
+    <!-- Template Main JS File -->
+    <script src="assets/js/main.js"></script>
 
-      <script
-        src="https://www.gstatic.com/firebasejs/9.13.0/firebase-app-compat.js"></script>
-      <script
-        src="https://www.gstatic.com/firebasejs/9.13.0/firebase-analytics-compat.js"></script>
-      <script
-        src="https://www.gstatic.com/firebasejs/9.13.0/firebase-auth-compat.js"></script>
-      <script type="module">
-        const firebaseConfig = {
-          apiKey: "AIzaSyBct7eRux52dAVJ_8_YFNPz1zBm4sCzJB8",
-          authDomain: "overflowingfeature.firebaseapp.com",
-          projectId: "overflowingfeature",
-          storageBucket: "overflowingfeature.appspot.com",
-          messagingSenderId: "275715689132",
-          appId: "1:275715689132:web:86d867c52de9808aad2d09",
-          measurementId: "G-JW9RVHZRGS"
-        };
-      
-        // Initialize Firebase
-        const app = firebase.initializeApp(firebaseConfig);
-        const analytics = firebase.analytics(app);
-        const auth = firebase.auth(app);
-
-        
-    </script>
-    </body>
-    <footer>
-
-    </footer>
-  </html>
+    <!-- Easter egg JS File-->
+    <script src = "./assets/js/easterEgg.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+  </body>
+</html>
