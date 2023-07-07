@@ -61,6 +61,25 @@ h6 {
   animation: animate-preloader 1s linear infinite;
 }
 
+.chatbot-button {
+  position: fixed;
+  bottom: 70px;
+  right: 20px;
+  background-color: orangered;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-align: center;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999;
+}
+
+.chatbot-button i {
+  margin-right: 5px;
+}
+
 @keyframes animate-preloader {
   0% {
     transform: rotate(0deg);
@@ -1049,4 +1068,40 @@ section {
   #footer .credits {
     padding-top: 4px;
   }
+}
+
+
+.floating-notification {
+  position: fixed;
+  bottom: 80px;
+  right: 20px;
+  background-color: orangered;
+  color: #fff;
+  width: 180px;
+  height: 60px;
+  border-radius: 30px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  z-index: 9999; /* Ensure the button appears above other elements */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.floating-notification img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.notification-message {
+  display: none;
+  white-space: nowrap;
+}
+
+.floating-notification:hover .notification-message {
+  display: block;
 }
