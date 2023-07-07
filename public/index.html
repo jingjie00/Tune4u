@@ -1,6 +1,4 @@
 <!DOCTYPE html>
-    <!--realtime Database JS File-->
-    <script type="module" src = "./assets/js/db.js"></script>
     
 <html lang="en">
   <head>
@@ -47,18 +45,55 @@
   * Author: BootstrapMade.com
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
+  <script type="module">  // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.0.0/firebase-analytics.js";
+    import { getStorage, ref, uploadBytes  } from "https://www.gstatic.com/firebasejs/9.5.0/firebase-storage.js";
+    // TODO: Add SDKs for Firebase products that you want to use
+    // https://firebase.google.com/docs/web/setup#available-libraries
 
+    // Your web app's Firebase configuration
+    // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+    const firebaseConfig = {
+      apiKey: "AIzaSyBct7eRux52dAVJ_8_YFNPz1zBm4sCzJB8",
+      authDomain: "overflowingfeature.firebaseapp.com",
+      databaseURL: "https://overflowingfeature-default-rtdb.asia-southeast1.firebasedatabase.app",
+      projectId: "overflowingfeature",
+      storageBucket: "overflowingfeature.appspot.com",
+      messagingSenderId: "275715689132",
+      appId: "1:275715689132:web:86d867c52de9808aad2d09",
+      measurementId: "G-JW9RVHZRGS"
+    };
 
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    // Initialize Cloud Storage and get a reference to the service
+  const storage = getStorage(app);
+    const analytics = getAnalytics(app);
+    // Get a non-default Storage bucket
+// const firebaseApp = getApp();
+// const storage = getStorage(firebaseApp, "gs://my-custom-bucket");
+
+    const addMarks = ()=>{
+        let obj = {
+          name: 'abc',
+          age: 123
+        }
+      }
+      app.database().ref('users/user1').set(obj);
+  </script>
   </head>
 
-  <body>
+  <body>      
+    <!--realtime Database JS File-->
+    <!-- <script type="module" src ="assets/js/db.js"></script> -->
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top">
       <div class="container d-flex align-items-center;">
           <a href="index.html" class="logo me-auto"><img
                   src="./assets/logo/logo-circle.png"
                   alt="Tune4U"
-                  class="img-fluid" /></a>
+                  class="img-fluid" onclick="addMarks()"/></a>
           <nav id="navbar" class="navbar">
               <ul>
                   <li><a class="nav-link scrollto active" href="#hero">Home</a></li>

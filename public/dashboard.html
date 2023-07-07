@@ -7,6 +7,8 @@
     <!-- Font Awesome Cdn Link -->
     <link rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
   </head>
   <body>
 
@@ -57,9 +59,18 @@
           <h1 id="welcome">Welcome back!</h1>
           <i class="fas fa-user-cog"></i>
         </div>
-        <div class="points-box">
-          <p class="caption">Your current point is:</p>
-          <p class="caption bold">8990</p>
+        <div class="points-container">
+          <div class="points-box left-aligned">
+            <p class="caption">Your current point is:</p>
+            <p class="caption bold">8990</p>
+          </div>
+          <div class="points-box right-aligned">
+            <p class="caption bold">
+              <img src="assets/img/customerservice.png" alt="Image" class="smaller-image" style ="width: 50px; height: 50px">
+              <span class="align-middle">Service Request</span>
+              <i class="fas fa-chevron-right"></i>
+            </p>
+          </div>
         </div>
         <div class="main-skills">
           <div class="card">
@@ -78,7 +89,7 @@
             <img src="assets/img/giftbox.png" alt
               style="width: 80px; height: 80px;">
             <h3>Rewards</h3>
-            <button href="rewards.html">View</button>
+            <button onclick="window.location = 'rewards.html' ">View</button>
           </div>
           <div class="card">
             <img src="assets/img/letter.png" alt
@@ -112,8 +123,6 @@
 
       <script src="assets/js/main.js"></script>
       <script>
-
-
             const firebaseConfig = {
               apiKey: "AIzaSyBct7eRux52dAVJ_8_YFNPz1zBm4sCzJB8",
               authDomain: "overflowingfeature.web.app",
@@ -131,21 +140,39 @@
             
         firebase.auth().onAuthStateChanged(function(user) {
           if (user) {
-            console.log(user)
             //find id call welcome and change the text to welcome back, [user]
             const welcome = document.getElementById("welcome");
             welcome.innerHTML = "Welcome back, " + user.displayName;
-            console.log(user)
-          }else{
-            // No user is signed in.
-            //window.location.href = "login.html";
+            console.log(user);
+
+            // Testing by Min Yi
+            // User is signed in
+            var userid = user.uid;
+
+            // Make an HTTP GET request using Axios
+            let bodydata = {
+              uid: userid
+            };
+            axios.post('https://asia-southeast1-overflowingfeature.cloudfunctions.net/function-1', bodydata)
+              .then(function(response) {
+                // Handle the response data
+                console.log(response.data);
+              })
+              .catch(function(error) {
+                // Handle errors
+                console.error(error);
+              });
           }
         })
-
 
         //when id called "logout" clicked, signout
         const logout = document.getElementById("logout");
         logout.addEventListener("click", function(){
+          // TO-DO
+          //  firebase.auth().user = email/username
+          // get the user name & POST
+          // main.js
+          // sign in only POST
           firebase.auth().signOut().then(() => {
             // Sign-out successful.
             console.log("signout successful")
