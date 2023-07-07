@@ -311,5 +311,11 @@ a:hover{
     vertical-align: middle;
   }
 
-
+  .button-container.center-aligned {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
   
