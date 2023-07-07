@@ -130,6 +130,7 @@ h6 {
   transition: all 0.5s;
   z-index: 997;
   padding: 15px 0;
+  background: #ff9f1c;
 }
 
 #header.header-scrolled,
@@ -197,11 +198,21 @@ h6 {
   margin-left: 5px;
 }
 
-.navbar a:hover,
-.navbar .active,
-.navbar .active:focus,
-.navbar li:hover > a {
+.navbar a:hover {
   color: #e85d04;
+}
+
+.navbar .active {
+  color: #ffffff;
+}
+
+.navbar .active:focus
+{
+  color: #e85d04;
+}
+
+.navbar li:hover > a {
+  color: #e85d04;
 }
 
 .navbar .getstarted,
@@ -1104,4 +1115,10 @@ section {
 
 .floating-notification:hover .notification-message {
   display: block;
+}
+
+.mobile-nav-toggle {
+  position: absolute;
+  top: 10px; /* Adjust the top position as needed */
+  right: -50px; /* Adjust the right position as needed */
 }
