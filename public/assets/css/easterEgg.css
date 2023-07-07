@@ -1,0 +1,33 @@
+.easter-egg {
+  z-index: 1;
+  position: fixed;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  margin: 5% auto;
+}
+
+.animate-in {
+    animation: popup .3s forwards;
+    transform-origin: bottom;
+}
+
+@keyframes popup {
+0% { transform: scale(0);  }
+100% { transform: scale(1); }
+}
+  
+.easter-egg:hover {
+    animation: shake 1.2s forwards;
+}
+
+@keyframes shake {
+  35% { transform: rotate(8deg); }
+  40% { transform: rotate(-8deg); }
+  45% { transform: rotate(8deg); }
+  50% { transform: rotate(-8deg); }
+}
+
+.break {
+  transform: scale(0) !important;
+}
