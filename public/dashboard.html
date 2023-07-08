@@ -169,6 +169,11 @@
                 // Handle errors
                 console.error(error);
               });
+          }else{
+            // User is signed out
+            // ...
+            console.log("user is not signed in")
+            window.location.href = "login.html";
           }
         })
 
