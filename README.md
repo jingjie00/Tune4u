@@ -12,7 +12,7 @@
 - https://overflowingfeature.web.app/
 - https://tune4u.jingjietan.com/
 
-## Android Applciation Package
+## Android Application Package (APK)
 - In this repository.
 
 
